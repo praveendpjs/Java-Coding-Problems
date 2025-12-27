@@ -91,3 +91,48 @@ public class PalindromeNumber {
 //         }
 //     }
 // }
+
+// 3) Mathematical method
+// public class PalindromeNumberChecker {
+
+//     public static boolean isPalindrome(int num) {
+//         // Store the original number for comparison later
+//         int originalNum = num;
+//         int reverse = 0;
+//         int lastDigit;
+
+//         // Negative numbers are not palindromes
+//         if (num < 0) {
+//             return false;
+//         }
+
+//         while (num != 0) {
+//             lastDigit = num % 10; // Extract the last digit
+//             reverse = reverse * 10 + lastDigit; // Build the reverse number
+//             num /= 10; // Remove the last digit from the original number
+//         }
+
+//         // Check if the original number and the reversed number are the same
+//         return originalNum == reverse;
+//     }
+
+//     public static void main(String[] args) {
+//         int number = 12321;
+//         if (isPalindrome(number)) {
+//             System.out.println(number + " is a palindrome number.");
+//         } else {
+//             System.out.println(number + " is not a palindrome number.");
+//         }
+//     }
+// }
+
+// Start:
+// originalNum = 123, reversedNum = 0, num = 123
+
+// Iterations:
+
+// remainder = 3, reversedNum = 3, num = 12
+
+// remainder = 2, reversedNum = 32, num = 1
+
+// remainder = 1, reversedNum = 321, num = 0
