@@ -63,3 +63,30 @@ public class ValidParanthesis {
         System.out.println(isValid("([)]"));
     }
 }
+
+// Same without enhanced forloop:
+// public class ValidParanthesis {
+//     public static boolean isValid(String s) {
+//         Stack<Character> stack = new Stack<>();
+//         char[] arr = s.toCharArray();
+//         for(int i = 0; i < arr.length; i++){
+//             if(arr[i]=='{' || arr[i]=='(' || arr[i]=='[' )
+//                 stack.push(arr[i]);
+//         else{
+//             if(stack.empty() || (arr[i]==')' && stack.peek()!='(') || (arr[i]=='}' && stack.peek()!='{') || (arr[i]==']' && stack.peek()!='[') ) {
+//                 return false; 
+
+//             }
+//                 stack.pop();
+//             }
+//         }
+        
+//         return stack.empty();
+//     }
+//     public static void main(String[] args) {
+//         System.out.println(isValid("()[]{}"));
+//         System.out.println(isValid("(]"));
+//         System.out.println(isValid("([])"));
+//         System.out.println(isValid("([)]"));
+//     }
+// }
