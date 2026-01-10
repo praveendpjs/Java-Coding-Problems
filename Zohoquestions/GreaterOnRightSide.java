@@ -34,3 +34,27 @@ public class GreaterOnRightSide {
             System.out.print(arr[i]+" ");
     }
 }
+
+// Similar question leaders in an array
+// Input:
+// N = 6
+// Arr[] = {16, 17, 4, 3, 5, 2}
+// Output:
+// 17 5 2 
+// https://www.youtube.com/watch?v=rezfGLOdeEg
+
+// public class GreaterOnRightSide {
+    
+//     public static void main(String[] args) {
+//         int arr[] = {16, 17, 4, 3, 5, 2};
+//         int max = Integer.MIN_VALUE;
+//         StringBuilder result = new StringBuilder();
+//         for(int i = arr.length - 1; i >= 0; i-- ){
+//             if(max < arr[i]){
+//                 max = arr[i];
+//                 result.insert(0,max + " ");
+//             }
+//         }
+//         System.out.println(result);
+//     }
+// }
