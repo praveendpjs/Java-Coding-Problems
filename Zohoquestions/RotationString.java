@@ -9,6 +9,6 @@ public class RotationString {
 
     }
     public static boolean isRotation(String s1, String s2){
-        return s1.length() == s2.length() && (s1+s1).contains(s2);
+        return s1.length() == s2.length() && (s1+s1).contains(s2); // abcdabcd will certainly have bcda, cdab, dabc
     }
 }
