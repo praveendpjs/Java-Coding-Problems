@@ -50,7 +50,7 @@ public class GreaterOnRightSide {
 //         int max = Integer.MIN_VALUE;
 //         StringBuilder result = new StringBuilder();
 //         for(int i = arr.length - 1; i >= 0; i-- ){
-//             if(max < arr[i]){
+//             if(arr[i] > max){
 //                 max = arr[i];
 //                 result.insert(0,max + " ");
 //             }
