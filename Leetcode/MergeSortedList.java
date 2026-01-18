@@ -26,7 +26,7 @@ class ListNode {
         this.next = next; 
     }
 }
-public class MergeSorted {
+public class MergeSortedList {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(-1);
         ListNode tail = dummy;
@@ -58,7 +58,7 @@ public class MergeSorted {
     }
 
     public static void main(String[] args) {
-        MergeSorted s = new MergeSorted();
+        MergeSortedList s = new MergeSortedList();
 
         // build first list: 1 -> 3 -> 5
         ListNode a = new ListNode(1);
