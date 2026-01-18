@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1?page=1&sortBy=submissions
 // Find the missing number in an array from 0 to n. No duplicates sorted array given. Test case 1: A = {0,1,3} output = 2; 
 // Test case 2: A = {0,1,2,3} output = 4; Test case 3 {1,2,3} output = 0
 public class findMissingNum {
