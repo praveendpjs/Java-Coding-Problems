@@ -10,7 +10,7 @@
 // Output: "Orange"
 // Explanation: names "Orange" and "Banana" both have maximum length among all names but Orange comes first so answer will be "Orange". 
 
-package GeeksForGeeks;
+package GeeksForGeeks.Strings;
 
 import java.util.List;
 
