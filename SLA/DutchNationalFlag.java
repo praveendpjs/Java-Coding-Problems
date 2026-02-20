@@ -40,3 +40,13 @@ public class DutchNationalFlag {
         System.out.println("Sorted array: " + Arrays.toString(array)); // Output: [0, 0, 0, 1, 1, 1, 2, 2]
     }
 }
+
+// Step,mid Value,Action Taken,New Array State,Next Pointers
+// 1,arr[0] == 2,Swap mid (index 0) and high (index 7). Decrease high. Note: We don't increase mid because the newly swapped value at mid hasn't been evaluated yet.,"[0, 0, 1, 0, 2, 1, 1, 2]",low = 0mid = 0high = 6
+// 2,arr[0] == 0,"Swap low (index 0) and mid (index 0). Increase both low and mid. (Swapping an element with itself changes nothing, but pointer moves are vital).","[0, 0, 1, 0, 2, 1, 1, 2]",low = 1mid = 1high = 6
+// 3,arr[1] == 0,Swap low (index 1) and mid (index 1). Increase both low and mid.,"[0, 0, 1, 0, 2, 1, 1, 2]",low = 2mid = 2high = 6
+// 4,arr[2] == 1,"1s belong in the middle, so they are ignored. Just increase mid.","[0, 0, 1, 0, 2, 1, 1, 2]",low = 2mid = 3high = 6
+// 5,arr[3] == 0,"Swap low (index 2, which is 1) and mid (index 3, which is 0). Increase low and mid.","[0, 0, 0, 1, 2, 1, 1, 2]",low = 3mid = 4high = 6
+// 6,arr[4] == 2,"Swap mid (index 4, which is 2) and high (index 6, which is 1). Decrease high.","[0, 0, 0, 1, 1, 1, 2, 2]",low = 3mid = 4high = 5
+// 7,arr[4] == 1,Ignore the 1 and increase mid.,"[0, 0, 0, 1, 1, 1, 2, 2]",low = 3mid = 5high = 5
+// 8,arr[5] == 1,Ignore the 1 and increase mid.,"[0, 0, 0, 1, 1, 1, 2, 2]",low = 3mid = 6high = 5

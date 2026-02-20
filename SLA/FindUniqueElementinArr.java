@@ -1,4 +1,4 @@
-import java.util.HashMap;
+// import java.util.HashMap;
 
 public class FindUniqueElementinArr {
     static int UniqueElementsArr(int arr[]){
