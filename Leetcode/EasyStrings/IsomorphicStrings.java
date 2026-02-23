@@ -36,7 +36,6 @@
 // Input: s = "paper", t = "title"
 
 // Output: true
-package Leetcode.EasyStrings;
 
 import java.util.HashMap;
 
