@@ -192,7 +192,7 @@ public class RelativeRanks {
 //     int n = score.length;
 //     String[] result = new String[n];
 
-//     // Clone and sort descending
+//     // Clone and sort ascending
 //     int[] sorted = score.clone();
 //     Arrays.sort(sorted);
 
