@@ -1,4 +1,4 @@
-package GeeksForGeeks;
+package GeeksForGeeks.Strings;
 import java.util.Scanner;
 
 public class VowelCounter {
