@@ -40,3 +40,136 @@ public class IntersectionElements2 {
         return result;
     }
 }
+
+// Example
+// nums1 = [1, 2, 2, 1]
+// nums2 = [2, 2]
+
+// Initial state:
+
+// used  = [false, false]
+// temp  = [0, 0]     // size = min(4,2)
+// k = 0
+// Iteration 1
+
+// i = 0
+
+// nums1[i] = 1
+
+// Inner loop:
+
+// j = 0 → nums2[0] = 2
+// 1 != 2 → continue
+
+// j = 1 → nums2[1] = 2
+// 1 != 2 → continue
+
+// No match.
+
+// State unchanged:
+
+// used = [false, false]
+// temp = [0,0]
+// k = 0
+// Iteration 2
+
+// i = 1
+
+// nums1[i] = 2
+
+// Inner loop:
+
+// j = 0
+// nums2[0] = 2
+// used[0] = false
+
+// Condition:
+
+// !used[0] && nums1[i] == nums2[j]
+// true && true
+
+// Match found.
+
+// Execute:
+
+// temp[k++] = nums1[i]
+// temp[0] = 2
+// k = 1
+
+// Mark used:
+
+// used[0] = true
+
+// Break inner loop.
+
+// State now:
+
+// used = [true, false]
+// temp = [2,0]
+// k = 1
+// Iteration 3
+
+// i = 2
+
+// nums1[i] = 2
+
+// Inner loop:
+
+// j = 0
+// nums2[0] = 2
+// BUT used[0] = true
+
+// So skip.
+
+// j = 1
+// nums2[1] = 2
+// used[1] = false
+
+// Match.
+
+// temp[k++] = 2
+// temp[1] = 2
+// k = 2
+
+// Mark used:
+
+// used[1] = true
+
+// Break.
+
+// State:
+
+// used = [true, true]
+// temp = [2,2]
+// k = 2
+// Iteration 4
+
+// i = 3
+
+// nums1[i] = 1
+
+// Inner loop:
+
+// j = 0 → used already true
+// j = 1 → used already true
+
+// No match.
+
+// End of loops
+
+// Current arrays:
+
+// temp = [2,2]
+// k = 2
+// Copy result
+// result = new int[k]
+// result = [0,0]
+
+// Copy:
+
+// result[0] = temp[0] → 2
+// result[1] = temp[1] → 2
+
+// Final result:
+
+// [2,2]
