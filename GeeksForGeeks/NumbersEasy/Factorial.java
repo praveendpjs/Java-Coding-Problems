@@ -9,7 +9,7 @@
 // Input: n = 4
 // Output: 24
 // Explanation: 1 x 2 x 3 x 4 = 24
-package GeeksForGeeks;
+package GeeksForGeeks.NumbersEasy;
 
 public class Factorial {
     int factorial(int n) {

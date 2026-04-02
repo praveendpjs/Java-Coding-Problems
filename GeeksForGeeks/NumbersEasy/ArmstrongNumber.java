@@ -15,7 +15,7 @@
 // Output: false
 // Explanation: 100 is not an Armstrong number since 1^3 + 0^3 + 0^3 = 1. 
 
-package GeeksForGeeks;
+package GeeksForGeeks.NumbersEasy;
 
 public class ArmstrongNumber {
     public static boolean isArmstrong(int number) {

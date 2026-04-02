@@ -12,7 +12,7 @@
 // Output: 121
 // Explanation: Since there are no zeroes in 121, the number remains as 121.
 
-package GeeksForGeeks;
+package GeeksForGeeks.NumbersEasy;
 
 public class ReplaceAll0 {
     int convertfive(int num) {
